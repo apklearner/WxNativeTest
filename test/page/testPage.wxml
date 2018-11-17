@@ -1,0 +1,4 @@
+<!--test/page/testPage.wxml-->
+<view class='container'> 
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+</view>

@@ -1,0 +1,11 @@
+/* test/page/testPage.wxss */
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  border-radius: 50%;
+}
