@@ -61,5 +61,11 @@ Page({
       url:'../../test/page/testPage'
     })
 
+  },
+
+  onLongClick:function(){
+    
+
   }
+
 })

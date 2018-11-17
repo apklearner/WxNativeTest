@@ -2,3 +2,5 @@
 <view class='container'> 
 <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
 </view>
+
+<view></view>

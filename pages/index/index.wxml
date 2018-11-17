@@ -7,35 +7,16 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-  <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
+
+
+  <view class='layout_1'>
     <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
+      <button class="user-motto" bindtap='onClick'>{{motto}}</button>
+    </view>
+
+
+    <view class="usermotto2">
+      <view id="btn2" class="user-motto2" bindtap='onClick' bindlongtap='onLongClick'>{{motto}}</view>
+    </view>
   </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-    <view class="usermotto">
-    <button class="user-motto" bindtap='onClick'>{{motto}}</button>
-  </view>
-  
 </view>

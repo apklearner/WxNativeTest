@@ -20,3 +20,51 @@
   /* margin-top: 200px; */
 
 }
+
+.usermotto2{
+
+  background-color: #ff0;
+  border-radius: 20rpx;
+}
+
+.user-motto2{
+  background-color: #0ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15rpx;
+  border-color: #000;
+  border-width: 5rpx;
+  border-style:dashed;
+  border-radius: 10rpx;
+
+}
+
+.user-motto2:active{
+ border-color: #f00;
+  border-width: 5rpx;
+  border-style:dotted;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10rpx;
+
+}
+
+
+.layout_1{
+  margin-top: 10rpx;
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* #btn2{
+background-color: #fff;
+}
+
+#btn2:active{
+  background-color:gold;
+} */
