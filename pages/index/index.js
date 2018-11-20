@@ -7,7 +7,20 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    radioItems:[
+      {name:'name1',id:"1",checked:true},
+      {name:'name2',id:"2",checked:false}
+
+    ],
+
+    checkItems: [
+      { name: 'nameC1', id: "1", checked: false },
+      { name: 'nameC2', id: "2", checked: true },
+      { name: 'nameC3', id: "3", checked: true }
+
+    ]
+
   },
   //事件处理函数
   bindViewTap: function() {
@@ -64,8 +77,49 @@ Page({
   },
 
   onLongClick:function(){
-    
+    console.log('onLongClick ')
 
+  }
+  ,
+
+  radioChange:function(e){
+    
+    let raItems = this.data.radioItems;
+    for(let i=0;i<raItems.length;i++){
+      raItems[i].checked = (raItems[i].id == e.detail.value);
+    }
+
+
+      this.setData({
+        radioItems: raItems
+      })
+  },
+
+  checkChanged:function(e){
+    console.log("checkChanged  -->>>> ");
+    console.log(e.detail);
+    console.log("<----  checkChanged  ");
+
+    let chItem = this.data.checkItems;
+    let checkedChild = e.detail.value;
+
+    
+    for (let i = 0; i < chItem.length;i++){
+      chItem[i].checked = false;
+      // console.log("chit  " + chItem[i].id +"   "+chItem[i].id === "1");
+
+      for (var j = 0; j< checkedChild.length;j++){
+      if(chItem[i].id == checkedChild[j]){
+        chItem[i].checked = true;
+      }
+    }
+    }
+  
+  
+
+    this.setData({
+      checkItems: chItem
+    })
   }
 
 })

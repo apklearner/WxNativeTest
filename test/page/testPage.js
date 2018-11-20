@@ -7,7 +7,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {}
+    userInfo: {},
+    date: "2016-09-01",
+    nums:[
+      12, 34, 56, 78, 90, 1234
+    ],
+    curNum:12
+
   },
 
   /**
@@ -21,52 +27,27 @@ Page({
     }
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  bindDateChange:function(e){
+    let mData =e.detail.value;
+    let splits = mData.split("-");
+    this.setData({
+      date: splits[0]+"="+splits[1]+">"+splits[2]
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onSwitchChanged:function(e){
+      console.log(e.detail);
+    
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+  bindCountryCodeChange:function(e){
+    console.log(e.detail);
+    let mNum = this.data.nums;
+    let mCurNum = mNum[e.detail.value];
 
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    this.setData({
+      curNum: mCurNum
+    })
   }
+  
 })

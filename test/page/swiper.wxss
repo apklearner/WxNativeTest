@@ -1,0 +1,20 @@
+/* test/page/swiper.wxss */
+
+.slide-image{
+  width: 90%;
+}
+
+.img{
+   width: 80%; 
+}
+
+.img_container{
+width: 100%;
+text-align:center;
+/* display: flex; */
+/* justify-content: center; */
+}
+
+.main{
+  height: auto;
+}

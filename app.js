@@ -41,6 +41,12 @@ App({
   },
   onHide:function(){
     console.log('app onHide');
+  },
+
+
+  globalTestData:{
+    msg:"msg"
   }
+
 
 })

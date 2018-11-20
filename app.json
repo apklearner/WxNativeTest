@@ -1,8 +1,11 @@
 {
   "pages": [
+      "test/net/request/request",
+    "test/page/testPage",
     "pages/index/index",
-    "pages/logs/logs",
-    "test/page/testPage"
+    "test/page/swiper",
+    "pages/logs/logs"
+  
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +13,6 @@
     "navigationBarTitleText": "WeChatTest",
     "navigationBarTextStyle": "light",
     "enablePullDownRefresh": true,
-    "backgroundColor":"#eee"
+    "backgroundColor": "#eee"
   }
 }

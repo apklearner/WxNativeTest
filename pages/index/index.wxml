@@ -19,4 +19,34 @@
       <view id="btn2" class="user-motto2" bindtap='onClick' bindlongtap='onLongClick'>{{motto}}</view>
     </view>
   </view>
+
+  <view id='btn_indx_1' hidden='{{false}}'>
+    <view class='btn'> Hello World</view>
+  </view>
+
+
 </view>
+
+<radio-group class='radio_group' bindchange="radioChange">
+  .
+  <label class="weui-check_label" wx:for="{{radioItems}}" wx:key='a'>
+    <radio class="weui-check" value="{{item.id}}" checked="{{item.checked}}" />
+    <view class="weui-cell__bd">{{item.name}}</view>
+    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+      <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+    </view>
+  </label>
+</radio-group>
+
+<checkbox-group class='radio_group' bindchange="checkChanged">
+  <label class="weui-check_label" wx:for="{{checkItems}}" wx:key='a'>
+    <checkbox class="weui-check" value="{{item.id}}" checked="{{item.checked}}" />
+    <view class="weui-cell__bd">{{item.name}}</view>
+    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+      <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+      <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+    </view>
+  </label>
+</checkbox-group>
+
+<input placeholder='请输入内容' class='input'></input>

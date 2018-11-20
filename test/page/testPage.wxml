@@ -1,6 +1,19 @@
 <!--test/page/testPage.wxml-->
-<view class='container'> 
-<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
-</view>
+<view class='container'>
 
-<view></view>
+  <picker class='normal' mode="date" value="{{date}}" start="2015-09-01" end="2027-09-01" bindchange="bindDateChange">
+    <view class="weui-input">{{date}}</view>
+  </picker>
+
+
+  <switch class='normal' checked='{{true}}' bindchange='onSwitchChanged' value='1234faf' />
+
+
+  <picker class='normal'  bindchange="bindCountryCodeChange" value='{{nums}}' range="{{nums}}">
+    <view class="weui-select" >{{curNum}}</view>
+  </picker>
+
+
+
+        <slider class='normal slider' max='999' min='233' value='666' show-value='{{true}}' />
+</view>

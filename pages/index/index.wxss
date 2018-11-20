@@ -68,3 +68,85 @@ background-color: #fff;
 #btn2:active{
   background-color:gold;
 } */
+
+.btn{
+  margin: 30px auto;
+  color: gold;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  
+}
+.btn:before{
+  display: block;
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 1rpx solid #00f;
+}
+
+/* .btn:before{
+  display: inline;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 1rpx solid #000;
+
+} */
+
+.btn:after{
+  display: block;
+  content: "";
+  bottom: 0;
+  border-bottom: 1rpx solid #f00;
+}
+
+
+
+#btn_indx_1{
+  width: 100%; 
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* text-align: center;*/
+}
+
+.weui-check{
+  margin-top: 0px;
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* .weui-check_label{
+  width: 100%;
+} */
+
+.weui-check_label:active{
+  background-color: #f0f
+}
+
+/* .radio_group{
+  display: flex;
+  flex-direction: row;
+} */
+
+.weui-check_label {
+  padding: 10px 15px;
+  position: relative;
+    display: flex;
+}
+.weui-cell__bd{
+flex: 1;
+}
+
+.input{
+  margin: 10px 15px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+

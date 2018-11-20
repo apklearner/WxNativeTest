@@ -1,0 +1,25 @@
+
+<view class='container'>
+
+<button class='normal test_req_btn' type='primary' plain='false' bindtap='onClick' data='124'>测试接口</button>
+
+
+<view class='normal'>{{message}}</view>
+
+
+</view>
+
+<view class='normal block'>
+<block class="normal" wx:for="{{videos}}" wx:key="a">
+<view class='video_item' bindtap='onItemClick' data-mytitle ="{{item.data.title}}"  >
+<view class='imgItem'>
+  <image src='{{item.data.icon}}' class='image' ></image>
+  <view class='txtItem'>
+  <view class='video_title'>{{item.data.title}}</view>
+  <view class='video_desc'>{{item.data.description}}</view>
+  <view class='video_type'>{{item.data.dataType}}</view>
+  </view>
+  </view>
+</view>
+</block>
+</view>
