@@ -75,7 +75,11 @@ align-items: center;
 
 .btn{
   width: 80px; 
+  padding: 8px;
   margin-right: 10px;
+  background-color: gold;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .btn_hover{
