@@ -1,4 +1,4 @@
-
+<scroll-view scroll-y="true" style='height:{{wh}}px'  lower-threshold="5" bindscrolltolower="reachBottom">
 <view class='container'>
 
 <button class='normal test_req_btn' type='primary' plain='false' bindtap='onClick' data='124'>测试接口</button>
@@ -11,15 +11,16 @@
 
 <view class='normal block'>
 <block class="normal" wx:for="{{videos}}" wx:key="a">
-<view class='video_item' bindtap='onItemClick' data-mytitle ="{{item.data.title}}"  >
+<view class='video_item' bindtap='onItemClick' data-index="{{index}}" data-mytitle ="{{item.title}}" data-mylink='{{item.link}}' >
 <view class='imgItem'>
-  <image src='{{item.data.icon}}' class='image' ></image>
+  <image src='{{item.picInfo[0].url}}' class='image'  ></image>
   <view class='txtItem'>
-  <view class='video_title'>{{item.data.title}}</view>
-  <view class='video_desc'>{{item.data.description}}</view>
-  <view class='video_type'>{{item.data.dataType}}</view>
+  <view class='video_title'>{{item.source}}</view>
+  <view class='video_desc'>{{item.title}}</view>
+  <view class='video_type'>{{item.ptime}}</view>
   </view>
   </view>
 </view>
 </block>
 </view>
+</scroll-view>

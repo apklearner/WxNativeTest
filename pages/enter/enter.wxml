@@ -1,0 +1,22 @@
+<!--pages/enter/enter.wxml-->
+<view id="enter_index">
+
+<block wx:for="{{txts}}" wx:key="key">
+<button id='btn_enter_index' bindtap='onItemClick' data-msg='{{item}}' >{{item}}</button>
+
+</block>
+
+
+</view>
+<!-- 
+<view style="margin-top:20px">
+<view  wx:if="{{false}}">
+    <view style='background-color:#000;width:100%;height:50px'></view>
+</view>
+<view wx:elif="{{true}}">
+  <view style='background-color:#f00;width:100%;height:50px'></view>
+</view>
+<view wx:else>
+ <view style='background-color:#0f0;width:100%;height:50px'></view>
+</view>
+</view> -->

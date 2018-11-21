@@ -1,0 +1,36 @@
+<!--test/mul/mulpage.wxml-->
+<view class='container2'>
+
+  <view class='main'>
+    <view class='main_1'>
+      <view class='half_1'></view>
+
+      <view class='half_2'></view>
+    </view>
+
+    <view class="main_2">
+      <view class='center'>
+
+
+        <view class='main_3'>
+
+          <image class="image" src='https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1626917149,2861377720&fm=58&bpow=1000&bpoh=750'></image>
+
+          <view class="txt_content">
+            <text>title</text>
+            <text>content</text>
+          </view>
+          <view>
+            <button class='btn' hover-class='btn_hover'>button</button>
+          </view>
+        </view>
+
+
+      </view>
+    </view>
+
+
+
+  </view>
+
+</view>

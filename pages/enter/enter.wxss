@@ -1,0 +1,13 @@
+/* pages/enter/enter.wxss */
+
+#enter_index{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#btn_enter_index{
+  width: 60%;
+  height: auto;
+  margin-top: 10px;
+}

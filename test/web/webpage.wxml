@@ -1,0 +1,2 @@
+<!--test/web/webpage.wxml-->
+<web-view id='web_view' src="{{link}}"   bindload="onPageFinish"  binderror="onPageError"></web-view>

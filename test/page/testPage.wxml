@@ -16,4 +16,34 @@
 
 
         <slider class='normal slider' max='999' min='233' value='666' show-value='{{true}}' />
+
+        <view > {{passedMsg}}</view>
+</view>
+
+
+
+<view style="margin-top:20px;width:100%">
+<view  wx:if="{{true}}">
+    <text style='background-color:#000;width:100%;height:50px;color:white'>WX:IF \n text是包裹内容</text>  
+    <!-- text 文字是包裹 -->
+</view>
+<view wx:elif="{{true}}">
+  <view style='background-color:#f00;width:100%;height:50px;color:white'>WX:IF \n view是撑满容器 </view>
+  <!-- view 区块是撑满 -->
+</view>
+
+<view wx:if="{{true}}">
+ <view style='background-color:#aff;width:100%;height:50px' >WX:IF GREEN \n view是撑满容器</view>
+</view>
+<view wx:elif="{{false}}">
+ <text style='background-color:#000;width:100%;height:50px;color:white'>WX:IF \n text是包裹内容</text>  
+</view>
+</view>
+
+<view >
+<text  style='background-color:#aff'>left</text>
+<text style='background-color:#af0;float:right'>right</text>
+</view>
+<view >
+<view  class='btn_next' hover-class="hove_next"  hover-stay-time='0'>Hover Next 点击会变色, 不支持text</view>
 </view>

@@ -12,7 +12,8 @@ Page({
     nums:[
       12, 34, 56, 78, 90, 1234
     ],
-    curNum:12
+    curNum:12,
+    passedMsg:""
 
   },
 
@@ -23,6 +24,14 @@ Page({
     if (app.globalData.userInfo){
       this.setData({
         userInfo: app.globalData.userInfo
+      })
+    }
+
+
+    if(options.msg){
+
+      this.setData({
+        passedMsg:options.msg
       })
     }
   },

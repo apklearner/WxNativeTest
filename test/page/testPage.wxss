@@ -12,5 +12,19 @@
 
 .slider{
 width: 80%;
+}
 
+
+.btn_next{
+background-color:#faa;
+display:block;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.hove_next{
+/* display:block; */
+background-color: #f00;
+color: white;
+border-radius: 5px;
 }

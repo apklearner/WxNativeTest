@@ -1,11 +1,15 @@
 {
   "pages": [
-      "test/net/request/request",
+    "test/mul/mulpage",
+    "pages/enter/enter",
+    "test/net/request/request",
     "test/page/testPage",
     "pages/index/index",
     "test/page/swiper",
-    "pages/logs/logs"
-  
+    "pages/logs/logs",
+    "test/web/webpage"
+    
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
