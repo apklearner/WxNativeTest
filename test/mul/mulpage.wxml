@@ -21,7 +21,7 @@
             <text>content</text>
           </view>
           <view>
-            <view class='btn' hover-class='btn_hover' hover-stay-time='100'>button</view>
+            <view class='btn' hover-class='btn_hover' hover-stay-time='100' bindtap='onClick'>button</view>
           </view>
         </view>
 

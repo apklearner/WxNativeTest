@@ -1,15 +1,15 @@
 {
   "pages": [
-    "test/mul/mulpage",
+    
     "pages/enter/enter",
     "test/net/request/request",
     "test/page/testPage",
     "pages/index/index",
     "test/page/swiper",
     "pages/logs/logs",
-    "test/web/webpage"
-    
-    
+    "test/web/webpage",
+   "test/new/useComponentPage",
+    "test/mul/mulpage"
   ],
   "window": {
     "backgroundTextStyle": "light",

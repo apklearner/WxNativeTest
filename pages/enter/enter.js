@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    pages: ["../index/index", "../../test/page/swiper", "../../test/page/testPage", "../../test/net/request/request", "../../test/web/webpage", "../../test/mul/mulpage"],
-    txts:["index","swiper","testPage","request","webpage","mulpage"]
+    pages: ["../index/index", "../../test/page/swiper", "../../test/page/testPage", "../../test/net/request/request", "../../test/web/webpage", "../../test/mul/mulpage","../../test/new/useComponentPage"],
+    txts:["index","swiper","testPage","request","webpage","mulpage","useComponent"]
   },
 
   /**
